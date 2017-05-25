@@ -9,6 +9,50 @@
 			font-family: digit;
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
+		
+		#code{
+		color:red;
+		animation:myfirst 35s;
+		-moz-animation:myfirst 35s; /* Firefox */
+		-webkit-animation:myfirst 35s; /* Safari and Chrome */
+		-o-animation:myfirst 35s; /* Opera */
+				
+		}
+		@keyframes myfirst
+		{
+		0%   {color:red;}
+		25%  {color:yellow;}
+		50%  {color:blue;}
+		75%  {color:#FF00FF;}
+		100% {color:green;}
+		}
+
+		@-moz-keyframes myfirst /* Firefox */
+		{
+		0%   {color:red;}
+		25%  {color:yellow;}
+		50%  {color:blue;}
+		75%  {color:#FF00FF;}
+		100% {color:green;}
+		}
+
+		@-webkit-keyframes myfirst /* Safari and Chrome */
+		{
+		0%   {color:red;}
+		25%  {color:yellow;}
+		50%  {color:blue;}
+		75%  {color:#FF00FF;}
+		100% {color:green;}
+		}
+
+		@-o-keyframes myfirst /* Opera */
+		{
+		0%   {color:red;}
+		25%  {color:yellow;}
+		50%  {color:blue;}
+		75%  {color:#FF00FF;}
+		100% {color:green;}
+		}
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -43,7 +87,8 @@
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						LaoGao, We've known each other for
+						<a href="beautiful.html" title="The most beautiful girl in the world" style='text-decoration:none;' target="_blank">LaoGao</a>,
+						We've known each other for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
